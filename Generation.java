@@ -87,7 +87,7 @@ public class Generation extends Parameter {
     @Override
     public Double getValue() {
         if (isIsOffset() == false) {
-            return this.getValue();
+            return super.getValue();
         }
         else {
             return getOffsetGeneration().getValue() + getOffset();
